@@ -1,0 +1,18 @@
+package com.office.library.admin.member;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AdminMemberService {
+	
+	@Autowired
+	AdminMemberDao adminMemberDao;
+	
+	public int createAccountConfirm(AdminMemberVo adminMemberVo) {
+		System.out.println("[AdminMemberService] createAccountConfirm");
+		
+		return 0;
+	}
+
+}
