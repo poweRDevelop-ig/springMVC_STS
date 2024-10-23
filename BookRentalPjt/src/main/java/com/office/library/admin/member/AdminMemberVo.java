@@ -16,7 +16,7 @@ public class AdminMemberVo {
 	String a_m_mod_date;	//관리자 수정일
 	
 	public int getA_m_no() { return a_m_no; }
-	public void setA_m_mo(int a_m_no) { this.a_m_no = a_m_no; }
+	public void setA_m_no(int a_m_no) { this.a_m_no = a_m_no; }
 	
 	public int getA_m_approval() { return a_m_approval; }
 	public void setA_m_approval(int a_m_approval) { this.a_m_approval = a_m_approval; }
@@ -37,7 +37,7 @@ public class AdminMemberVo {
 	public void setA_m_part(String a_m_part) { this.a_m_part = a_m_part; }
 	
 	public String getA_m_position() { return a_m_position; }
-	public void setA_m_position(String a_m_psition) { this.a_m_position = a_m_position; }
+	public void setA_m_position(String a_m_position) { this.a_m_position = a_m_position; }
 	
 	public String getA_m_mail() { return a_m_mail; }
 	public void setA_m_mail(String a_m_mail) { this.a_m_mail = a_m_mail; }
