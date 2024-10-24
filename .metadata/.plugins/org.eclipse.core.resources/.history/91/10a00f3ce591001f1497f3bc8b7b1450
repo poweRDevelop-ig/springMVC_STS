@@ -105,10 +105,6 @@ public class AdminMemberController {
 		System.out.println("[AdminMemberController] setAdminApproval()");
 		
 		String nextPage = "redirect:/admin/member/listupAdmin";
-		/*=======================================================================================*/
-									/* 뷰페이지는 디렉토리로 */
-									/*   리다이렉트는 URL로  */
-		/*=======================================================================================*/
 		
 		adminMemberService.setAdminApproval(a_m_no);
 		
