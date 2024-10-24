@@ -118,6 +118,15 @@
 		</dependency>
 		
 <!-- ===================== 내디펜던시야 ===================== -->
+
+		<!-- Spring Context Support(=확장팩) -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context-support</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
 		
 		<!-- JDBC -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
@@ -141,6 +150,14 @@
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-core</artifactId>
 		    <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- JavaMail API -->
+		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+		<dependency>
+		    <groupId>com.sun.mail</groupId>
+		    <artifactId>javax.mail</artifactId>
+		    <version>1.6.2</version>
 		</dependency>
 		        
 <!-- ===================== 내디펜던시야 ===================== -->		        
