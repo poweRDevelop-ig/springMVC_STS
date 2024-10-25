@@ -1,0 +1,43 @@
+쿼리문
+
+create database db_library;
+use db_library;
+
+create table tbl_admin_member(
+	a_m_no			int				auto_increment,
+    a_m_approval	int				not null default 0,
+    a_m_id			varchar(20)		not null,
+    a_m_pw			varchar(100)	not null,
+    a_m_name		varchar(20)		not null,
+    a_m_gender		char(1)			not null,
+    a_m_part		varchar(20)		not null,
+    a_m_position	varchar(20)		not null,
+    a_m_mail		varchar(50)		not null,
+    a_m_phone		varchar(20)		not null,
+    a_m_reg_date	datetime,
+    a_m_mod_date	datetime,
+    primary key(a_m_no)
+);
+
+select * from tbl_admin_member;
+
+UPDATE db_library.tbl_admin_member
+SET a_m_approval = 0
+WHERE a_m_no IN (2, 3);
+
+create table tbl_book(
+		b_no					int				auto_increment,
+        b_thumbnail				varchar(100),
+        b_name					varchar(30)		not null,
+        b_author				varchar(20)		not null,
+        b_publisher				varchar(20)		not null,
+        b_publish_year			char(4)		 	not null,
+        b_isbn					varchar(30)		not null,
+        b_call_number			varchar(30)		not null,
+        b_rental_able			tinyint			not null default 1,
+        b_reg_date				datetime,
+        b_mod_date				datetime,
+        PRIMARY KEY(b_no)
+);
+
+select * from tbl_book;

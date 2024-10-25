@@ -152,13 +152,22 @@
 		    <version>${org.springframework-version}</version>
 		</dependency>
 		
-		<!-- JavaMail API -->
+		<!-- JavaMail API (구) -->
 		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
 		<dependency>
 		    <groupId>com.sun.mail</groupId>
 		    <artifactId>javax.mail</artifactId>
 		    <version>1.6.2</version>
 		</dependency>
+		
+		<!-- Common Fileupload -->
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+		<dependency>
+		    <groupId>commons-fileupload</groupId>
+		    <artifactId>commons-fileupload</artifactId>
+		    <version>1.5</version>
+		</dependency>
+				
 		        
 <!-- ===================== 내디펜던시야 ===================== -->		        
 	</dependencies>

@@ -11,6 +11,8 @@
 		<!-- jdbc-context.xml을 인식할 수 있게 추가 -->
 		/WEB-INF/spring/jdbc-context.xml
 		/WEB-INF/spring/security-context.xml
+		/WEB-INF/spring/mail-context.xml
+		/WEB-INF/spring/file-context.xml
 		</param-value>
 	</context-param>
 	

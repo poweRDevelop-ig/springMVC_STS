@@ -1,0 +1,18 @@
+package com.office.library.book;
+
+public class BookVo {
+	
+	a_m_no
+    a_m_approval
+    a_m_id
+    a_m_pw
+    a_m_name
+    a_m_gender		char(1)			not null,
+    a_m_part		varchar(20)		not null,
+    a_m_position	varchar(20)		not null,
+    a_m_mail		varchar(50)		not null,
+    a_m_phone		varchar(20)		not null,
+    a_m_reg_date	datetime,
+    a_m_mod_date
+
+}
