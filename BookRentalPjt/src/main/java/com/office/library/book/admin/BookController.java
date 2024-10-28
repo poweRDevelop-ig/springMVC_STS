@@ -86,7 +86,17 @@ public class BookController {
 	}
 	
 	//도서 수정
-	//@GetMapping("/modifyBookForm")
-	//public String 
+	@GetMapping("/modifyBookForm")
+	public String modifyBookForm(@RequestParam("b_no") int b_no, Model model) {
+		System.out.println("[BookController] bookDetail();");
+		
+		String nextPage = "admin/book/modify_book_form";
+		
+		BookVo bookVo = bookService.modifyBookForm(b_no);
+		
+		model.addAttribute("bookVo", bookVo);
+		
+		return nextPage;
+	}
 
 }
