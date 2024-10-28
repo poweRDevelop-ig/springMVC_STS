@@ -1,7 +1,10 @@
 package com.office.library.book.admin;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -53,5 +56,37 @@ public class BookController {
 		}
 		return nextPage;
 	}
+	
+	//도서 검색
+	@GetMapping("/searchBookConfirm")
+	public String searchBookConfirm(BookVo bookVo, Model model) {
+		System.out.println("[userBookController] searchBookConfirm()");
+		
+		String nextPage = "admin/book/search_book";
+		
+		List<BookVo> bookVos = bookService.searchBookConfirm(bookVo);
+		
+		model.addAttribute("bookVos", bookVos);
+		
+		return nextPage;
+	}
+	
+	//도서 상세
+	@GetMapping("/bookDetail")
+	public String bookDetail(@RequestParam("b_no") int b_no, Model model) {
+		System.out.println("[BookController] bookDetail()");
+		
+		String nextPage = "admin/book/book_detail";
+		
+		BookVo bookVo = bookService.bookDetail(b_no);
+		
+		model.addAttribute("bookVo", bookVo);
+		
+		return nextPage;
+	}
+	
+	//도서 수정
+	//@GetMapping("/modifyBookForm")
+	//public String 
 
 }

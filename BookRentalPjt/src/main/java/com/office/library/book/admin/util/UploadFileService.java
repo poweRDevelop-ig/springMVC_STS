@@ -3,8 +3,10 @@ package com.office.library.book.admin.util;
 import java.io.File;
 import java.util.UUID;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+@Service
 public class UploadFileService {
 	
 	public String upload(MultipartFile file) {
@@ -40,6 +42,8 @@ public class UploadFileService {
 			System.out.println("[UploadFileService] FILE UPLOAD FAIL!!");
 			return null;
 		}
+		
+		
 		
 	}
 
