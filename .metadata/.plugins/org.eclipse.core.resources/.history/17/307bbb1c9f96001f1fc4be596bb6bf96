@@ -20,7 +20,7 @@ public class BookDao {
 	public List<BookVo> selectBookBySearch(BookVo bookVo) {
 		System.out.println("[BookDao] selectBookBySearch()");
 		
-		String sql = "SELECT * FroM tbl_book "
+		String sql = "SELECT * FORM tbl_book "
 					+ "WHERE b_name LIKE ? "
 					+ "ORDER BY b_no DESC";
 		
@@ -68,7 +68,7 @@ SQLException {
 				 @Override
 				 public BookVo mapRow(ResultSet rs, int rowNum) throws
 SQLException {
-					 BookVo bookVo = new BookVo();
+					 BookVo bookVop = new BookVo();
 					 
 					 bookVo.setB_no(rs.getInt("b_no"));
 						bookVo.setB_thumbnail(rs.getString("b_thumbnail"));

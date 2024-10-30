@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.office.library.book.BookVo;
 
@@ -28,20 +27,6 @@ public class BookController {
 		List<BookVo> bookVos = bookService.searchBookConfirm(bookVo);
 		
 		model.addAttribute("bookVos", bookVos);
-		
-		return nextPage;
-	}
-	
-	//도석 상세
-	@GetMapping("/bookDetail")
-	public String bookDetail(@RequestParam("b_no") int b_no, Model model) {
-		System.out.println("[BookController] bookDetail()");
-		
-		String nextPage = "user/book/bookDetail";
-		
-		BookVo bookVo = bookService.bookDetail(b_no);
-		
-		model.addAttribute("bookVo", bookVo);
 		
 		return nextPage;
 	}

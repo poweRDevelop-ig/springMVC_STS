@@ -20,7 +20,7 @@ public class BookDao {
 	public List<BookVo> selectBookBySearch(BookVo bookVo) {
 		System.out.println("[BookDao] selectBookBySearch()");
 		
-		String sql = "SELECT * FroM tbl_book "
+		String sql = "SELECT * FORM tbl_book "
 					+ "WHERE b_name LIKE ? "
 					+ "ORDER BY b_no DESC";
 		
