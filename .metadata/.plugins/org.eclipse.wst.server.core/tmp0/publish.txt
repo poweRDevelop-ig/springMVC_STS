@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Wed Oct 30 18:16:04 KST 2024
+#Thu Oct 31 17:40:32 KST 2024
 org.eclipse.jst.jee.server\:BookRentalPjt=C\:\\Users\\KOSTA\\Downloads\\apache-tomcat-9.0.96\\wtpwebapps\\BookRentalPjt
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\KOSTA\\.m2\\repository\\org\\springframework\\spring-web\\5.2.9.RELEASE\\spring-web-5.2.9.RELEASE.jar=C\:\\Users\\KOSTA\\Downloads\\apache-tomcat-9.0.96\\wtpwebapps\\BookRentalPjt\\WEB-INF\\lib\\spring-web-5.2.9.RELEASE.jar

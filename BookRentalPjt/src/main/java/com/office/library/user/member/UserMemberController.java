@@ -81,11 +81,11 @@ public class UserMemberController {
 		
 		String nextPage = "user/member/modify_account_form";
 		
-		UserMemberVo loginedUserMemberVo =
-				(UserMemberVo) session.getAttribute("loginedUserMemberVo");
+		//UserMemberVo loginedUserMemberVo =
+		//		(UserMemberVo) session.getAttribute("loginedUserMemberVo");
 		
-		if (loginedUserMemberVo == null)
-			nextPage = "redirect:/user/member/loginForm";
+		//if (loginedUserMemberVo == null)
+		//	nextPage = "redirect:/user/member/loginForm";
 		
 		return nextPage;
 	}
